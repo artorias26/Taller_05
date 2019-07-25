@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
+    <stylesheets>
+        <URL value="@/css/principal.css" />
+    </stylesheets>
+   <children>
+      <BorderPane layoutX="178.0" layoutY="106.0" prefHeight="400.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <SplitPane dividerPositions="0.5186246418338109" HBox.hgrow="ALWAYS">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="375.0">
+                           <children>
+                              <GridPane layoutX="47.0" layoutY="109.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="159.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="217.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="139.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <JFXButton onAction="#btn_Limpiar" prefHeight="40.0" prefWidth="100.0" styleClass="button03" stylesheets="@../css/principal.css" text="LIMPIAR" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets left="40.0" />
+                                       </GridPane.margin>
+                                    </JFXButton>
+                                    <GridPane GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <JFXButton onAction="#btn_Guardar" prefHeight="40.0" prefWidth="100.0" stylesheets="@../css/principal.css" text="GUARDAR" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                             <GridPane.margin>
+                                                <Insets right="5.0" />
+                                             </GridPane.margin>
+                                          </JFXButton>
+                                          <JFXButton onAction="#btn_actualizar" prefHeight="40.0" prefWidth="100.0" styleClass="button04" stylesheets="@../css/principal.css" text="ACTUALIZAR" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </GridPane>
+                                    <JFXButton onAction="#btn_eliminar" prefHeight="40.0" prefWidth="100.0" styleClass="button02" stylesheets="@../css/principal.css" text="ELIMINAR" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="20.0" />
+                                       </GridPane.margin>
+                                    </JFXButton>
+                                    <JFXButton onAction="#btn_buscar" prefHeight="30.0" prefWidth="62.0" styleClass="button03" stylesheets="@../css/principal.css" text="BUSCAR" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <JFXTextField fx:id="txt_numero_codigo" promptText="N°" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="nombre_animal" promptText="Firulays" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="especie" promptText="Ornitorrinco" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </JFXTextField>
+                                    <JFXComboBox fx:id="tipo" prefHeight="25.0" prefWidth="130.0" promptText="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.valignment="TOP">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </JFXComboBox>
+                                    <JFXComboBox fx:id="tipo2" prefWidth="130.0" promptText="SELECCIONAR" GridPane.columnIndex="1" GridPane.rowIndex="8" GridPane.valignment="TOP">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </JFXComboBox>
+                                    <Label text="Codigo del animal:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Fecha de ingreso:" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Nombre del animal:" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Fecha de Nacimiento:" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Tipo:" GridPane.halignment="RIGHT" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Tipo:" GridPane.halignment="RIGHT" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Especie:" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Nombre del cuidador:" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="nombre_cuidador" promptText="Vicrtor" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.valignment="TOP">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </JFXTextField>
+                                    <JFXDatePicker fx:id="fecha_ingreso" promptText="Fecha" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </JFXDatePicker>
+                                    <JFXDatePicker fx:id="fecha_nacimiento" promptText="Fecha" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="TOP">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </JFXDatePicker>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="375.0">
+                           <children>
+                              <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TableView fx:id="tabla" prefHeight="200.0" prefWidth="200.0">
+                                      <columns>
+                                        <TableColumn fx:id="col_animal" prefWidth="70.0" text="N° animal" />
+                                        <TableColumn fx:id="col_nombre" prefWidth="143.0" text="nombre" />
+                                          <TableColumn fx:id="col_especie" prefWidth="113.0" text="especie" />
+                                          <TableColumn fx:id="col_nombre_cuidador" prefWidth="139.0" text="nombre del cuidador" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

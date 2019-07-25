@@ -1,0 +1,78 @@
+.button
+{
+-fx-background-color : #3f963f;
+-fx-border-color: #3f963f;
+-fx-text-fill:  #FFFFFF;
+
+}
+.button:hover
+{
+-fx-background-color :#267926;
+-fx-text-fill:  #FFF;
+}
+
+.button:pressed
+{
+-fx-background-color : #3f963f;
+-fx-text-fill: #FFF;
+}
+
+.button02{
+    -fx-background-color : #cb4f4e;
+    -fx-border-color: #cb4f4e;
+    -fx-text-fill:  #FFFFFF;
+    
+}
+
+.button02:hover
+{
+-fx-background-color :#ce3e3d ;
+-fx-text-fill:  #FFF;
+}
+
+
+.button02:pressed
+{
+-fx-background-color : #cb4f4e;
+-fx-text-fill: #FFF;
+}
+
+.button03{
+    -fx-background-color : #00aae9;
+    -fx-border-color: #00aae9;
+    -fx-text-fill:  #FFFFFF;
+    
+}
+
+.button03:hover
+{
+-fx-background-color :#035c7d ;
+-fx-text-fill:  #FFF;
+}
+
+
+.button03:pressed
+{
+-fx-background-color : #00aae9;
+-fx-text-fill: #FFF;
+}
+
+.button04{
+    -fx-background-color : #e4bf04;
+    -fx-border-color: #e4bf04;
+    -fx-text-fill:  #FFFFFF;
+    
+}
+
+.button04:hover
+{
+-fx-background-color :#d6b304 ;
+-fx-text-fill:  #FFF;
+}
+
+
+.button04:pressed
+{
+-fx-background-color : #e4bf04;
+-fx-text-fill: #FFF;
+}
